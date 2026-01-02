@@ -1,0 +1,70 @@
+<section
+  id="booking"
+  class="py-24 px-6 bg-amber-600 text-black grunge-texture relative"
+>
+  <div class="max-w-3xl mx-auto">
+    <h2
+      class="text-6xl font-extrabold mb-4 uppercase tracking-tighter italic text-center"
+      data-key="booking-title"
+    >
+      Booking Band
+    </h2>
+    <p
+      class="text-center font-bold mb-12 uppercase tracking-widest opacity-80"
+      data-key="booking-sub"
+    >
+      Bawa Energi Rock ke Event Anda
+    </p>
+
+    <form id="bookingForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <input
+        type="text"
+        id="eoName"
+        placeholder="Nama EO / Event"
+        class="bg-white/10 border-2 border-black p-4 placeholder:text-black focus:bg-white/40 outline-none transition font-bold"
+        required
+      />
+      <input
+        type="text"
+        id="contact"
+        placeholder="WA / Email"
+        class="bg-white/10 border-2 border-black p-4 placeholder:text-black focus:bg-white/40 outline-none transition font-bold"
+        required
+      />
+      <input
+        type="date"
+        id="date"
+        class="bg-white/10 border-2 border-black p-4 focus:bg-white/40 outline-none transition font-bold text-black uppercase"
+        required
+      />
+      <input
+        type="text"
+        id="duration"
+        placeholder="Durasi (e.g. 60 Min)"
+        class="bg-white/10 border-2 border-black p-4 placeholder:text-black focus:bg-white/40 outline-none transition font-bold"
+      />
+      <textarea
+        id="notes"
+        placeholder="Pesan Tambahan"
+        class="md:col-span-2 bg-white/10 border-2 border-black p-4 h-32 placeholder:text-black focus:bg-white/40 outline-none transition font-bold"
+      ></textarea>
+
+      <div class="md:col-span-2 flex flex-col md:flex-row gap-4 mt-4">
+        <button
+          type="button"
+          onclick="sendToWA()"
+          class="flex-1 bg-black text-white font-black py-5 uppercase tracking-tighter hover:bg-zinc-800 transition shadow-2xl"
+        >
+          WhatsApp
+        </button>
+        <button
+          type="button"
+          onclick="sendToEmail()"
+          class="flex-1 border-4 border-black font-black py-5 uppercase tracking-tighter hover:bg-black hover:text-white transition"
+        >
+          Email Inquiry
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

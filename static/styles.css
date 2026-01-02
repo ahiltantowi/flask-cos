@@ -1,0 +1,29 @@
+ body {
+        font-family: "Montserrat", sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      .font-oswald {
+        font-family: "Oswald", sans-serif;
+      }
+      .grunge-texture {
+        background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+      }
+      /* Custom scrollbar untuk kesan premium */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #09090b;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #d97706;
+      }
+
+/* Menambahkan gaya potong diagonal untuk variasi bentuk */
+  @media (max-width: 1024px) {
+    .clip-path-slant-right {
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    }
+  }

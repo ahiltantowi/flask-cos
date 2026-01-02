@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cross Out Silence | Official Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Oswald:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='styles.css')}}"
+    />
+  </head>
+  <body
+    class="bg-zinc-950 text-zinc-100 selection:bg-amber-600 selection:text-white"
+  >
+    {% include "nav.html" %} {% include "home.html" %} {% include "about.html"
+    %} {% include "personnel.html" %} {% include "song_list.html" %} {% include
+    "documentation.html" %} {% include "music_gigs.html" %} {% include
+    "booking.html" %}{% include "rider.html" %}{% include "contact.html" %}{%
+    include "maps.html" %} {%include "footer.html" %}
+
+    <script src="{{url_for('static', filename='scripts.js')}}"></script>
+  </body>
+</html>
